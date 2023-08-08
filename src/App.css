@@ -23,3 +23,10 @@ tr:nth-child(even) {
   margin-left: 15px;
 
 }
+.flyOutButton{
+  margin-left: 20px;
+}
+
+.css-1drqwgc-euiFlexGroup-responsive-l-flexStart-stretch-row {
+  flex-direction: column !important;
+}

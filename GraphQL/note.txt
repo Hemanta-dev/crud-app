@@ -66,3 +66,31 @@ mutation UpdateUser($id: ID!, $updatedUser: UserInput!) {
   }
 }
 -----------------------------------------------------------------------------------------------------------------------
+        // <table>
+        //   <thead>
+        //     <tr>
+        //       <th>S.N</th>
+        //       <th>First Name</th>
+        //       <th>Last Name</th>
+        //       <th>Email</th>
+        //       <th>Action</th>
+        //     </tr>
+        //   </thead>
+        //   <tbody>
+        //     {userData.map((eachData, i) => (
+        //       <tr key={i}>
+        //         <td>{i + 1}</td>
+        //         <td>{eachData.firstName}</td>
+        //         <td>{eachData.lastName}</td>
+        //         <td>{eachData.email}</td>
+        //         <td>
+        //           <EuiButton fill size="s" color="primary" onClick={() => { handleEdit(eachData.id) }}>Edit</EuiButton>
+        //           <EuiButton fill size="s" color="danger" onClick={() => { handleDelete(eachData.id) }}>Delete</EuiButton>
+        //         </td>
+        //       </tr>
+        //     ))}
+        //   </tbody>
+        // </table>
+      // )}
+    // </>
+  // );
