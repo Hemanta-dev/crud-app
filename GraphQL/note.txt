@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------------------------------------
+query getALLUsers {
+  users{
+    firstName
+    lastName
+    email
+    
+}
+}
+
+----------------------------------------------------------------------------------------------------------------
+query getUserById{
+  user(id:"2"){
+    id
+    firstName
+    lastName
+    email
+}
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+mutation createuser($useradd: UserInput!){
+  user:userAdd(UserNew: $useradd){
+    id
+    firstName
+    lastName
+    email
+}
+}
+
+{
+  "useradd": {
+    "firstName": "love233232",
+    "lastName": "me",
+    "email": "hemu@gmail.com"
+  }
+}
+-------------------------------------------------------------------------------------------------------------------
+
+mutation {
+  userDelete(id: "a6e0fb5370") {
+    id
+    firstName
+    lastName
+    email
+  }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+mutation UpdateUser($id: ID!, $updatedUser: UserInput!) {
+  userUpdate(id: $id, updatedUser: $updatedUser) {
+    id
+    firstName
+    lastName
+    email
+  }
+}
+
+{
+  "id": "1",
+  "updatedUser": {
+    "firstName": "NewFirstName",
+    "lastName": "NewLastName",
+    "email": "newemail@example.com"
+  }
+}
+-----------------------------------------------------------------------------------------------------------------------

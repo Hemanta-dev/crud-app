@@ -1,0 +1,37 @@
+  //get all data 
+  // const responseData = useGetAllPostQuery();
+  //get specific data
+  // const responseData = useGetPostByIdQuery(6);
+  //get data in limit
+  // const responseData =useGetPostByLimitQuery(6);
+    // const newData = responseData.data;
+
+  // console.log("data", newData);
+
+  // //delete specific data
+  // const [deletePost,responseData] =useDeletePostByIdMutation();
+  // console.log(deletePost,"8888888888888");
+  // const handleDelete =(id)=>{
+  //   deletePost(2);
+  //   console.log(responseData.isSuccess);
+  // }
+    
+    
+    
+    
+      {/* {newData ? newData.map((eachData, index) => (
+        <div key={index}>
+          <p>id: {eachData.id}</p>
+          <p>title: {eachData.title}</p>
+          <p>body:{eachData.body}</p>
+        </div>
+
+      )) : (
+        <p>no data found</p>
+      )} */}
+   
+        {/* id:{responseData.data.id}
+        title:{responseData.data.title}
+        body:{responseData.data.body} */}
+{/* 
+        <input type="button" onClick={handleDelete} value="Delete"/> */}
