@@ -61,7 +61,7 @@ const Test1 = () => {
       <Flyout userData={userData} setUserData={setUserData} isFlyoutVisible={isFlyoutVisible} setIsFlyoutVisible={setIsFlyoutVisible} isEdit={isEdit} setIsEdit={setIsEdit} getId={getId} setGetId={setGetId}/>
  
       <br />
-      <br />
+
       {isLoading ? (
         <p>Loading...</p>
       ) : (

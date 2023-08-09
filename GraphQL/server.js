@@ -4,7 +4,9 @@ import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-co
 import typeDefs from "./schema.js";
 import resolvers from "./resolvers.js";
 
+import connectToDatabase from "./DB.js";
 
+connectToDatabase();
 const server =new ApolloServer({
     typeDefs,
     resolvers,

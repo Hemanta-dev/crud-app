@@ -1,7 +1,7 @@
 {
   "name": "GraphQL",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,9 @@
   "dependencies": {
     "apollo-server": "^3.12.0",
     "apollo-server-core": "^3.12.0",
+    "dotenv": "^16.3.1",
     "graphql": "^16.7.1",
+    "mongoose": "^7.4.2",
     "nodemon": "^3.0.1"
   }
 }
